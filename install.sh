@@ -49,20 +49,21 @@ echo -e "---------------------"
 echo -e "-Copy configurations-"
 echo -e "---------------------"
 cp conf/defaults.ini $GRAF_HOME/conf/defaults.ini
+cp conf/datasources.yml $GRAF_HOME/conf/provisioning/datasources/datasources.yml
 echo -e "Configurations copied\n\n"
 
 echo -e "---------------------"
 echo -e "-Run InfluxDB--------"
 echo -e "---------------------"
 # Run InfluxDB
-./INF_HOME/usr/bin/influxd &>/dev/null &
+./$INF_HOME/usr/bin/influxd &>/dev/null &
 echo -e "InfluxDB runs !\n\n"
 
 echo -e "---------------------"
 echo -e "-Run Telegraf--------"
 echo -e "---------------------"
 # Run telegraf
-./telegraf/usr/bin/telegraf --config ./telegraf/etc/telegraf/telegraf.conf&>/dev/null &
+./$TEL_HOME/usr/bin/telegraf --config ./$TEL_HOME/etc/telegraf/telegraf.conf&>/dev/null &
 echo -e "Telegraph agent runs !\n\n"
 
 echo -e "---------------------"
