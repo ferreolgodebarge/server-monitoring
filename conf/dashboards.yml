@@ -1,0 +1,6 @@
+- name: 'telegraph'
+  org_id: 1
+  folder: ''
+  type: 'file'
+  options:
+    folder: 'dashboards/dashboard_telegraf.json'

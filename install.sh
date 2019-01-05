@@ -50,6 +50,7 @@ echo -e "-Copy configurations-"
 echo -e "---------------------"
 cp conf/defaults.ini $GRAF_HOME/conf/defaults.ini
 cp conf/datasources.yml $GRAF_HOME/conf/provisioning/datasources/datasources.yml
+cp conf/dashboards.yml $GRAF_HOME/conf/provisioning/dashboards/dashboards.yml
 echo -e "Configurations copied\n\n"
 
 echo -e "---------------------"
